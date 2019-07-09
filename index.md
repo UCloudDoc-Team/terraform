@@ -4,8 +4,9 @@
 
 **目录**
 
-![nsort dsort msort](/images/indexmenu\>/compute/terraform#1)
+{{indexmenu>:compute:terraform#1 | nsort dsort msort}}
 
-![](/images/logo-2.png)
+{{:compute:terraform:logo-2.png?260 |}}
 
-![](/images/terraform.png)
+{{:compute:terraform:terraform.png?300 |}}
+

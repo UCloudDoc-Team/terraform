@@ -2,4 +2,4 @@
 
 \# 场景案例
 
-![nsort dsort msort](/images/indexmenu\>/compute/terraform/solutions#3)
+{{indexmenu>:compute:terraform:solutions#3 | nsort dsort msort}}

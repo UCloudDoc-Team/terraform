@@ -2,4 +2,4 @@
 
 \# 机型与规格
 
-![nsort dsort msort](/images/indexmenu\>/compute/terraform/specification#1)
+{{indexmenu>:compute:terraform:specification#1 | nsort dsort msort}}
