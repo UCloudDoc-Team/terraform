@@ -25,12 +25,12 @@
 
 **配置默认用户**
 
-- 设置秘钥 ``UCLOUD_PUBLIC_KEY`` 和 ``UCLOUD_PRIVATE_KEY`` 为全局环境变量（推荐）, 或在 HCL 文件中显式指定 ``public_key`` 和 ``private_key`` 参数。
-- 如果是子账号，应配置项目ID ``UCLOUD_PROJECT_ID`` 为全局环境变量 (推荐)，或在 HCL 文件中显式指定 ``project_id`` 参数。
+- 设置秘钥 UCLOUD\_PUBLIC\_KEY 和 UCLOUD\_PRIVATE\_ KEY 为全局环境变量（推荐）, 或在 HCL 文件中显式指定 public\_key 和 private\_key 参数。
+- 如果是子账号，应配置项目ID UCLOUD\_PROJECT\_ID 为全局环境变量 (推荐)，或在 HCL 文件中显式指定 project\_id 参数。
 
 ## 编写 HCL 文件
 
-让我们以初始化一个主机为目标，首先创建一个干净的空文件夹作为工作区，并且换到该目录下，编写一个 HCL 规格文件(eg：``main.tf``)，如下：
+让我们以初始化一个主机为目标，首先创建一个干净的空文件夹作为工作区，并且换到该目录下，编写一个 HCL 规格文件(eg：main.tf )，如下：
 
 ```tf
 # 配置 UCloud 为 terraform provider
@@ -59,7 +59,7 @@ resource "ucloud_instance" "example" {
 
 ## 初始化编排工具
 
-在当前目录下执行 ``terraform init`` 命令，初始化工作区：
+在当前目录下执行  terraform init  命令，初始化工作区：
 
 ```
 Initializing provider plugins...
@@ -77,7 +77,7 @@ commands will detect it and remind you to do so if necessary.
 
 ## 查看编排计划（可选）
 
-在当前目录下执行 ``terraform plan`` 命令，查看编排计划：
+在当前目录下执行  terraform plan  命令，查看编排计划：
 
 ```
 Refreshing Terraform state in-memory prior to plan...
@@ -132,7 +132,7 @@ can't guarantee that exactly these actions will be performed if
 
 ## 执行编排计划
 
-在当前目录下执行 ``terraform apply`` 命令并确认，执行编排计划（创建一台云主机）：
+在当前目录下执行  terraform apply  命令并确认，执行编排计划（创建一台云主机）：
 
 ```
 Do you want to perform these actions?
@@ -176,13 +176,13 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 如果执行编排计划失败，有多种可能原因导致:
 
 - 网络原因，则重试几次即可；
-- 编排计划内容字段校验错误，则按照要求修改HCL文件（即``.tf`` 文件），可参考[UCloud Terraform 官方文档](https://www.terraform.io/docs/providers/ucloud/index.html)；
+- 编排计划内容字段校验错误，则按照要求修改HCL文件（即 .tf 文件），可参考[UCloud Terraform 官方文档](https://www.terraform.io/docs/providers/ucloud/index.html)；
 - 资源不足，可切换地域或可用区；
 - 其他原因，可查询常见问题，或联系技术支持。
 
 ## 查看编排资源状态（可选）
 
-执行 ``terraform show`` 命令，查看编排资源状态（查看云主机状态）：
+执行  terraform show  命令，查看编排资源状态（查看云主机状态）：
 
 ```
 data.ucloud_images.default:
@@ -226,7 +226,7 @@ ucloud_instance.example:
 
 ## 销毁编排资源（可选）
 
-如需销毁当前编排资源，执行 ``terraform destroy `` 命令并确认，销毁编排资源（删除云主机）：
+如需销毁当前编排资源，执行  terraform destroy  命令并确认，销毁编排资源（删除云主机）：
 
 ```
 data.ucloud_images.default: Refreshing state...
