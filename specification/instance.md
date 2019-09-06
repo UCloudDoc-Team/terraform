@@ -7,7 +7,9 @@
 
 2）CPU平台支持：IvyBridge/Haswell/Broadwell/Skylake
 
-3）CPU内存组合（支持配比1:1-1:8）
+3）CPU内存组合（支持配比1:1-1:8)
+
+4) 单位：CPU - 核数 Memory - GB
 
 ^          ^ **High CPU（1:1）**                         ||| **Basic（1:2）**                         |||
 | :::      ^ **Instance Type**             ^ **CPU**  ^ **Memory**  ^ **Instance Type**          ^ **CPU**  ^ **Memory**  ^
@@ -55,6 +57,11 @@
 2）CPU平台支持：Skylake/Cascadelake
 
 3）CPU内存组合（支持配比1:1-1:8）
+
+4) 单位：CPU - 核数 Memory - GB
+
+5) 目前仅在北京二可用区E支持(cn-bj2-05), 且必须使用高内核的基础镜像
+
 
 ^          ^ **High CPU（1:1）**                         ||| **Basic（1:2）**                         |||
 | :::      ^ **Instance Type**             ^ **CPU**  ^ **Memory**  ^ **Instance Type**          ^ **CPU**  ^ **Memory**  ^
