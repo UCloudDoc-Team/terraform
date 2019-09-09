@@ -47,3 +47,7 @@ Terraform 天生支持并行资源编排，理论上和创建 1 台主机所需�
 
 可以通过 Terraform 插件仓库，拿到 UCloud Provider 的最新版本，这个操作是由 terraform init 命令完成的。
 Terraform 支持在配置文件中使用版本锁定语法，指定一个具体的版本，也可以指定一个版本范围。
+
+## 为了避免因误操作造成服务宕机，如何配置定义文件，保证特定资源不会被误删除？
+
+可以通过配置特定资源的 lifecycle，设置 prevent_destroy = true 来指定特定资源禁止删除。
