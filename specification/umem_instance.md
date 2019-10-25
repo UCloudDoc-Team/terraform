@@ -1,4 +1,4 @@
-{{indexmenu_n>3}}
+
 # Redis 与 Memcache 机型表
 
 ## Redis

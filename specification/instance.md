@@ -1,4 +1,4 @@
-{{indexmenu_n>1}}
+
 # UHost Instance 机型表
 
 通用型 N

@@ -1,4 +1,4 @@
-{{indexmenu_n>2}}
+
 # DB Instance 机型表
 
 高可用型 HA
