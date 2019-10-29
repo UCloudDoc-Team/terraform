@@ -4,15 +4,15 @@
 
 ## 快速链接
 
-**[[https://docs.ucloud.cn/compute/terraform/index|官方产品文档地址]]** (本文档)
+**[官方产品文档地址](https://docs.ucloud.cn/compute/terraform/index)** (本文档)
 
 对于产品有一个大致的了解
 
-**[[https://www.terraform.io/docs/providers/ucloud/|官方参考文档地址]]**
+**[官方参考文档地址](https://www.terraform.io/docs/providers/ucloud/)**
 
 用于查询 UCloud Terraform Provider 的各种参数
 
-**[[https://github.com/terraform-providers/terraform-provider-ucloud|开源仓库地址]]**
+**[开源仓库地址](https://github.com/terraform-providers/terraform-provider-ucloud)**
 
 欢迎对 UCloud Provider 贡献代码，成为 Contributor！
 

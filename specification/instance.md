@@ -11,44 +11,7 @@
 
 4) 单位：CPU - 核数 Memory - GB
 
-^          ^ **High CPU（1:1）**                         ||| **Basic（1:2）**                         |||
-| :::      ^ **Instance Type**             ^ **CPU**  ^ **Memory**  ^ **Instance Type**          ^ **CPU**  ^ **Memory**  ^
-^ **通用型 N**  | n-highcpu-1        | 1        | 1           | n-basic-1       | 1        | 2           |
-| :::      | n-highcpu-2        | 2        | 2           | n-basic-2       | 2        | 4           |
-| :::      | n-highcpu-4        | 4        | 4           | n-basic-4       | 4        | 8           |
-| :::      | n-highcpu-6        | 6        | 6           | n-basic-6       | 6        | 12          |
-| :::      | n-highcpu-8        | 8        | 8           | n-basic-8       | 8        | 16          |
-| :::      | n-highcpu-10       | 10       | 10          | n-basic-10      | 10       | 20          |
-| :::      | n-highcpu-12       | 12       | 12          | n-basic-12      | 12       | 24          | 
-| :::      | n-highcpu-14       | 14       | 14          | n-basic-14      | 14       | 28          |
-| :::      | n-highcpu-16       | 16       | 16          | n-basic-16      | 16       | 32          | 
-| :::      | n-highcpu-18       | 18       | 18          | n-basic-18      | 18       | 36          | 
-| :::      | n-highcpu-20       | 20       | 20          | n-basic-20      | 20       | 40          |
-| :::      | n-highcpu-22       | 22       | 22          | n-basic-22      | 22       | 44          |
-| :::      | n-highcpu-24       | 24       | 24          | n-basic-24      | 24       | 48          |
-| :::      | n-highcpu-26       | 26       | 26          | n-basic-26      | 26       | 52          |
-| :::      | n-highcpu-28       | 28       | 28          | n-basic-28      | 28       | 56          |
-| :::      | n-highcpu-30       | 30       | 30          | n-basic-30      | 30       | 60          |
-| :::      | n-highcpu-32       | 32       | 32          | n-basic-32      | 32       | 64          |
-^ :::      ^ **Standard（1:4）**                         ||^ **High Memory（1:8）**                    ^||
-| :::      ^ **Instance Type**            ^ **CPU**  ^ **Memory**  ^ **Instance Type**        ^ **CPU**  ^ **Memory**  ^
-| :::      | n-standard-1       | 1        | 4           | n-highmem-1     | 1        | 8           |
-| :::      | n-standard-2       | 2        | 8           | n-highmem-2     | 2        | 16          |
-| :::      | n-standard-4       | 4        | 16          | n-highmem-4     | 4        | 32          |
-| :::      | n-standard-6       | 6        | 24          | n-highmem-6     | 6        | 48          |
-| :::      | n-standard-8       | 8        | 32          | n-highmem-8     | 8        | 64          |
-| :::      | n-standard-10      | 10       | 40          | n-highmem-10    | 10       | 80          |
-| :::      | n-standard-12      | 12       | 48          | n-highmem-12    | 12       | 96          |
-| :::      | n-standard-14      | 14       | 56          | n-highmem-14    | 14       | 112         |
-| :::      | n-standard-16      | 16       | 64          | n-highmem-16    | 16       | 128         |
-| :::      | n-standard-18      | 18       | 72          |
-| :::      | n-standard-20      | 20       | 80          |
-| :::      | n-standard-22      | 22       | 88          |
-| :::      | n-standard-24      | 24       | 96          |
-| :::      | n-standard-26      | 26       | 104         |
-| :::      | n-standard-28      | 28       | 112         |
-| :::      | n-standard-30      | 30       | 120         |
-| :::      | n-standard-32      | 32       | 128         |
+<table><tr><th colspan="1">Category</th><th colspan="3">High CPU（1:1）</th><th colspan="3"> Basic（1:2）</th><th colspan="3"> Standard（1:4）</th><th colspan="3"> High Memory（1:8）</th><th colspan="3"> Customized（2:1-1:12）</th></tr><tr><th rowspan="18">Normal (N) </th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th></tr><tr><td>n-highcpu-1</td><td>1</td><td>1</td><td>n-basic-1</td><td>1</td><td>2</td><td>n-standard-1</td><td>1</td><td>4</td> <td>n-highmem-1</td><td>1</td><td>8</td><td>n-customized-2-1</td><td>2</td><td>1</td></tr><tr><td>n-highcpu-2</td><td>2</td><td>2</td><td>n-basic-2</td><td>2</td><td>4</td><td>n-standard-2</td><td>2</td><td>8</td> <td>n-highmem-2</td><td>2</td><td>16</td><td>n-customized-1-3</td><td>1</td><td>3</td> </tr><tr><td>n-highcpu-4</td><td>4</td><td>4</td><td>n-basic-4</td><td>4</td><td>8</td><td>n-standard-4</td><td>4</td><td>16</td> <td>n-highmem-4</td><td>4</td><td>32</td> <td>...</td><td>...</td><td>...</td></tr><tr><td>n-highcpu-6</td><td>6</td><td>6</td><td>n-basic-6</td><td>6</td><td>12</td><td>n-standard-6</td><td>6</td><td>24</td> <td>n-highmem-6</td><td>6</td><td>48</td><td>n-customized-1-12</td><td>1</td><td>12</td></tr> <tr><td>n-highcpu-8</td><td>8</td><td>8</td><td>n-basic-8</td><td>8</td><td>16</td><td>n-standard-8</td><td>8</td><td>32</td> <td>n-highmem-8</td><td>8</td><td>64</td> </tr> <tr><td>n-highcpu-10</td><td>10</td><td>10</td><td>n-basic-10</td><td>10</td><td>20</td><td>n-standard-10</td><td>10</td><td>40</td> <td>n-highmem-10</td><td>10</td><td>80</td> </tr> <tr><td>n-highcpu-12</td><td>12</td><td>12</td><td>n-basic-12</td><td>12</td><td>24</td><td>n-standard-12</td><td>12</td><td>48</td> <td>n-highmem-12</td><td>12</td><td>96</td> </tr> <tr><td>n-highcpu-14</td><td>14</td><td>14</td><td>n-basic-14</td><td>14</td><td>28</td><td>n-standard-14</td><td>14</td><td>56</td> <td>n-highmem-14</td><td>14</td><td>112</td> </tr> <tr><td>n-highcpu-16</td><td>16</td><td>16</td><td>n-basic-16</td><td>16</td><td>32</td><td>n-standard-16</td><td>16</td><td>64</td> <td>n-highmem-16</td><td>16</td><td>128</td> </tr> <tr><td>n-highcpu-18</td><td>18</td><td>18</td><td>n-basic-18</td><td>18</td><td>36</td><td>n-standard-18</td><td>18</td><td>72</td></tr> <tr><td>n-highcpu-20</td><td>20</td><td>20</td><td>n-basic-20</td><td>20</td><td>40</td><td>n-standard-20</td><td>20</td><td>80</td></tr> <tr><td>n-highcpu-22</td><td>22</td><td>22</td><td>n-basic-22</td><td>22</td><td>44</td><td>n-standard-22</td><td>22</td><td>88</td></tr> <tr><td>n-highcpu-24</td><td>24</td><td>24</td><td>n-basic-24</td><td>24</td><td>48</td><td>n-standard-24</td><td>24</td><td>96</td></tr> <tr><td>n-highcpu-26</td><td>26</td><td>26</td><td>n-basic-26</td><td>26</td><td>52</td><td>n-standard-26</td><td>26</td><td>104</td></tr> <tr><td>n-highcpu-28</td><td>28</td><td>28</td><td>n-basic-28</td><td>28</td><td>56</td><td>n-standard-28</td><td>28</td><td>112</td></tr> <tr><td>n-highcpu-30</td><td>30</td><td>30</td><td>n-basic-30</td><td>30</td><td>60</td><td>n-standard-30</td><td>30</td><td>120</td></tr> <tr><td>n-highcpu-32</td><td>32</td><td>32</td><td>n-basic-32</td><td>32</td><td>64</td><td>n-standard-32</td><td>32</td><td>128</td></tr> </table>
 
 快杰型 O（公测中）
 
@@ -63,17 +26,4 @@
 5) 目前仅在北京二可用区E支持(cn-bj2-05), 且必须使用高内核的基础镜像
 
 
-^          ^ **High CPU（1:1）**                         ||| **Basic（1:2）**                         |||
-| :::      ^ **Instance Type**             ^ **CPU**  ^ **Memory**  ^ **Instance Type**          ^ **CPU**  ^ **Memory**  ^
-^ **快杰型 O**  | o-highcpu-4        | 4        | 4           | o-basic-4       | 4        | 8           |
-| :::      | o-highcpu-8        | 8        | 8           | o-basic-8       | 8        | 16          |
-| :::      | o-highcpu-16       | 16       | 16          | o-basic-16      | 16       | 32          | 
-| :::      | o-highcpu-32       | 32       | 32          | o-basic-32      | 32       | 64          | 
-| :::      | o-highcpu-64       | 64       | 64          | o-basic-64      | 64       | 128          |
-^ :::      ^ **Standard（1:4）**                         ||^ **High Memory（1:8）**                    ^||
-| :::      ^ **Instance Type**            ^ **CPU**  ^ **Memory**  ^ **Instance Type**        ^ **CPU**  ^ **Memory**  ^
-| :::      | o-standard-4       | 4        | 16          | o-highmem-4     | 4        | 32          |
-| :::      | o-standard-8       | 8        | 32          | o-highmem-8     | 8        | 64          |
-| :::      | o-standard-16      | 16       | 64          | o-highmem-16    | 16       | 128         |
-| :::      | o-standard-32      | 32       | 128          | o-highmem-32    | 32       | 256         |
-| :::      | o-standard-64      | 64       | 256          |
+<table><tr><th colspan="1">Category</th><th colspan="3">High CPU（1:1）</th><th colspan="3"> Basic（1:2）</th><th colspan="3"> Standard（1:4）</th><th colspan="3"> High Memory（1:8）</th></tr><tr><th rowspan="6">OutStanding (O) </th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th></tr><tr><td>n-highcpu-4</td><td>4</td><td>4</td><td>o-basic-4</td><td>4</td><td>8</td><td>o-standard-4</td><td>4</td><td>16</td> <td>o-highmem-4</td><td>4</td><td>32</td> </tr><tr><td>o-highcpu-8</td><td>8</td><td>8</td><td>o-basic-8</td><td>8</td><td>16</td><td>o-standard-8</td><td>8</td><td>32</td> <td>o-highmem-8</td><td>8</td><td>64</td> </tr> <tr><td>o-highcpu-16</td><td>16</td><td>16</td><td>o-basic-16</td><td>16</td><td>32</td><td>o-standard-16</td><td>16</td><td>64</td> <td>o-highmem-16</td><td>16</td><td>128</td> </tr> <tr><td>o-highcpu-32</td><td>32</td><td>32</td><td>o-basic-32</td><td>32</td><td>64</td><td>o-standard-32</td><td>32</td><td>128</td></tr> <tr><td>o-highcpu-64</td><td>64</td><td>64</td><td>o-basic-64</td><td>64</td><td>128</td><td>o-standard-64</td><td>64</td><td>256</td></tr> </table>
