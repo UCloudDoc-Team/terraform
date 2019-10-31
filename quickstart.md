@@ -21,7 +21,7 @@
 **安装 Terraform**
 
 - 打开 [官方安装文档](https://learn.hashicorp.com/terraform/getting-started/install.html)
-- 按照文档安装 [Terraform CLI 工具](https://docs.ucloud.cn/software/cli/intro) (可选)
+- 按照文档安装 [Terraform CLI 工具](https://docs.ucloud.cn/developer/cli/intro) (可选)
 
 **配置默认用户**
 
