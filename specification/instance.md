@@ -23,7 +23,7 @@
 
 4) 单位：CPU - 核数 Memory - GB
 
-5) 目前仅在北京二可用区E支持(cn-bj2-05), 且必须使用高内核的基础镜像
+5) 目前仅在部分可用区支持,详情请见控制台, 且必须使用高内核的基础镜像
 
 
 <table><tr><th colspan="1">Category</th><th colspan="3">High CPU（1:1）</th><th colspan="3"> Basic（1:2）</th><th colspan="3"> Standard（1:4）</th><th colspan="3"> High Memory（1:8）</th></tr><tr><th rowspan="6">OutStanding (O) </th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th><th>InstanceType</th><th>CPU</th><th>Memory</th></tr><tr><td>n-highcpu-4</td><td>4</td><td>4</td><td>o-basic-4</td><td>4</td><td>8</td><td>o-standard-4</td><td>4</td><td>16</td> <td>o-highmem-4</td><td>4</td><td>32</td> </tr><tr><td>o-highcpu-8</td><td>8</td><td>8</td><td>o-basic-8</td><td>8</td><td>16</td><td>o-standard-8</td><td>8</td><td>32</td> <td>o-highmem-8</td><td>8</td><td>64</td> </tr> <tr><td>o-highcpu-16</td><td>16</td><td>16</td><td>o-basic-16</td><td>16</td><td>32</td><td>o-standard-16</td><td>16</td><td>64</td> <td>o-highmem-16</td><td>16</td><td>128</td> </tr> <tr><td>o-highcpu-32</td><td>32</td><td>32</td><td>o-basic-32</td><td>32</td><td>64</td><td>o-standard-32</td><td>32</td><td>128</td></tr> <tr><td>o-highcpu-64</td><td>64</td><td>64</td><td>o-basic-64</td><td>64</td><td>128</td><td>o-standard-64</td><td>64</td><td>256</td></tr> </table>
