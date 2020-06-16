@@ -32,9 +32,12 @@
 
 让我们以初始化一个主机为目标，首先创建一个干净的空文件夹作为工作区，并且换到该目录下，编写一个 HCL 规格文件(eg：main.tf )，如下：
 
-```tf
+```hcl
 # 配置 UCloud 为 terraform provider
 provider "ucloud" {
+  # public_key  = var.ucloud_public_key
+  # private_key = var.ucloud_private_key
+  # project_id  = var.ucloud_project_id
   region   = "cn-bj2"
 }
 
@@ -48,9 +51,9 @@ data "ucloud_images" "default" {
 # 创建一台 UCloud 云主机
 resource "ucloud_instance" "example" {
     availability_zone = "cn-bj2-05"
-    image_id          = "${data.ucloud_images.default.images.0.id}"
+    image_id          = data.ucloud_images.default.images[0].id
     instance_type     = "n-standard-1"
-    root_password     = "UCloud_2018"
+    root_password     = "UCloud_2020"
     name              = "tf-instance-example"
 }
 ```
