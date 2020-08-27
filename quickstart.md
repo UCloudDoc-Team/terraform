@@ -8,11 +8,11 @@
 
 对于产品有一个大致的了解
 
-**[官方参考文档地址](https://www.terraform.io/docs/providers/ucloud/)**
+**[官方参考文档地址](https://registry.terraform.io/providers/ucloud/ucloud/latest/docs)**
 
 用于查询 UCloud Terraform Provider 的各种参数
 
-**[开源仓库地址](https://github.com/terraform-providers/terraform-provider-ucloud)**
+**[开源仓库地址](https://github.com/ucloud/terraform-provider-ucloud)**
 
 欢迎对 UCloud Provider 贡献代码，成为 Contributor！
 
@@ -58,7 +58,7 @@ resource "ucloud_instance" "example" {
 }
 ```
 
-除了自己编写 HCL 规格文件,还可以将 [代码仓库](https://github.com/terraform-providers/terraform-provider-ucloud/tree/master/examples) 中的 example 拷贝进来，完成相应的部署。
+除了自己编写 HCL 规格文件,还可以将 [代码仓库](https://github.com/ucloud/terraform-provider-ucloud/tree/master/examples) 中的 example 拷贝进来，完成相应的部署。
 
 ## 初始化编排工具
 
@@ -179,7 +179,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 如果执行编排计划失败，有多种可能原因导致:
 
 - 网络原因，则重试几次即可；
-- 编排计划内容字段校验错误，则按照要求修改HCL文件（即 .tf 文件），可参考[UCloud Terraform 官方文档](https://www.terraform.io/docs/providers/ucloud/index.html)；
+- 编排计划内容字段校验错误，则按照要求修改HCL文件（即 .tf 文件），可参考[UCloud Terraform 官方文档](https://registry.terraform.io/providers/ucloud/ucloud/latest/docs);
 - 资源不足，可切换地域或可用区；
 - 其他原因，可查询常见问题，或联系技术支持。
 
@@ -219,7 +219,7 @@ ucloud_instance.example:
   memory = 4096
   name = tf-instance-example
   remark =
-  root_password = UCloud_2018
+  root_password = UCloud_2020
   security_group =
   status = Running
   subnet_id = subnet-hjohfy
