@@ -33,7 +33,17 @@
 让我们以初始化一个主机为目标，首先创建一个干净的空文件夹作为工作区，并且换到该目录下，编写一个 HCL 规格文件(eg：main.tf )，如下：
 
 ```hcl
-# 配置 UCloud 为 terraform provider
+# 配置 terraform 依赖（0.13 之后必须）
+terraform {
+  required_providers {
+    ucloud = {
+      source = "ucloud/ucloud"
+      version = "~>1.23.0"
+    }
+  }
+}
+
+# 配置 UCloud terraform provider
 provider "ucloud" {
   # public_key  = var.ucloud_public_key
   # private_key = var.ucloud_private_key
