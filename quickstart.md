@@ -4,7 +4,7 @@
 
 ## 快速链接
 
-**[官方产品文档地址](https://docs.ucloud.cn/terraform/README)** (本文档).
+**[官方产品文档地址](https://docs.ucloud.cn/terraform/README)** (本文档)
 
 对于产品有一个大致的了解
 
