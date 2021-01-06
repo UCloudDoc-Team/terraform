@@ -1,7 +1,7 @@
 # 概览
 
 * 产品简介
-    * [产品概述](/terraform/introduction/concept)
+    * [产品概述.](/terraform/introduction/concept)
     * [产品优势](/terraform/introduction/advantages)
     * [与其它工具的对比](/terraform/introduction/comparison)
 * [快速开始](/terraform/quickstart) 
